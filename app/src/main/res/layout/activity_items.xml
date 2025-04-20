@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemsActivity"
+    android:orientation="vertical"
+    android:background="#D0C3FD">
+
+    <TextView
+        android:id="@+id/link_to_start"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textColor="#4A00A2"
+        android:layout_marginTop="40dp"
+        android:textSize="15sp"
+        android:text="Выход"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#4A00A2"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Ваш класс"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text_view_1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColorLink="#4A00A2"
+        android:text="@string/hyperlink"
+        android:textSize="18sp"
+        android:textColor="#AF0349"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemsList"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp" />
+
+
+</LinearLayout>
