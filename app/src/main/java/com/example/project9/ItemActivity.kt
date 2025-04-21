@@ -16,7 +16,7 @@ class ItemActivity : AppCompatActivity() {
         val vk: TextView = findViewById(R.id.text_view_vk)
 
         title.text = intent.getStringExtra("itemTitle")
-        vk.text = intent.getStringExtra("itemVk")
+//        vk.text = intent.getStringExtra("itemVk")
 
 
         linkToClass.setOnClickListener {
