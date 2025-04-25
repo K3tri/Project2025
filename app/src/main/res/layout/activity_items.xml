@@ -32,7 +32,7 @@
         android:layout_marginTop="40dp"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:text="Ваш класс"
+        android:text="Выберите класс"
         tools:ignore="HardcodedText" />
 
     <TextView

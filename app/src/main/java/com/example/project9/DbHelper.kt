@@ -29,6 +29,8 @@ class DbHelper(val context: Context, factory: SQLiteDatabase.CursorFactory?):
         db.close()
     }
 
+
+
     fun getUser(login: String, pass: String): Boolean {
         val db = this.readableDatabase
 

@@ -28,6 +28,15 @@
         android:layout_height="wrap_content"
         android:text="TextView" />
 
+    <TextView
+        android:id="@+id/item_list_title_one"
+        android:textStyle="bold"
+        android:textSize="0sp"
+        android:textColor="#4C327E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
     <Button
         android:id="@+id/item_list_button"
         android:layout_gravity="center"
@@ -36,6 +45,7 @@
         android:backgroundTint="#8253D9"
         android:layout_height="wrap_content"
         android:text="Выбрать"
+        android:textColor="@color/white"
         tools:ignore="HardcodedText" />
 
 </LinearLayout>

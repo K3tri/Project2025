@@ -1,5 +1,6 @@
 <resources xmlns:https="http://schemas.android.com/apk/res-auto">
     <string name="app_name">Project 9</string>
-    <string name="VK_nine_hb" translatable="false"> <a href="https://vk.com/club226046049" />группа ВК</string>
+    <string name="my_link"><![CDATA[<a href="https://vk.com/club226046049">Нажмите здесь</a>]]></string>
+    <string name="VK_nine_hb" translatable="false"> <a href="https://vk.com/club226046049">группа ВК</a></string>
     <string name="hyperlink" translatable="false"> <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSiceT3WwlE-_sMrVWP8_WNehn__yN3vbwSDh4GZPZ_IxZUkshIWSG58wiNkOsL2nNApiiXpUCHPlFz/pubhtml?gid=30599713&amp;single=true">Перейти в общее расписание</a></string>
 </resources>

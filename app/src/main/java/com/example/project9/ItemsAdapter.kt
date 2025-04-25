@@ -17,7 +17,7 @@ class ItemsAdapter(var items: List<item>, var context: Context) : RecyclerView.A
         val image: ImageView = view.findViewById(R.id.item_list_image)
         val title: TextView = view.findViewById(R.id.item_list_title)
         val btn: Button = view.findViewById(R.id.item_list_button)
-//        val vk: TextView = view.findViewById(R.id.text_view_vk)
+        val vk: TextView = view.findViewById(R.id.item_list_title_one)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -32,7 +32,7 @@ class ItemsAdapter(var items: List<item>, var context: Context) : RecyclerView.A
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.title.text= items[position].title
-//        holder.vk.text= items[position].vk
+        holder.vk.text= items[position].scedual
 
         val imageId = context.resources.getIdentifier(
             items[position].image,
@@ -45,7 +45,9 @@ class ItemsAdapter(var items: List<item>, var context: Context) : RecyclerView.A
         holder.btn.setOnClickListener {
             val intent = Intent(context, ItemActivity::class.java)
 
-//            intent.putExtra("itemVk", items[position].vk)
+            intent.putExtra("URL", items[position].url)
+            intent.putExtra("VK", items[position].vk)
+            intent.putExtra("itemScedual", items[position].scedual)
             intent.putExtra("itemTitle", items[position].title)
 
             context.startActivity(intent)
