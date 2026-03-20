@@ -4,10 +4,13 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlin.jvm.java
 
 var a: Int = 0
 
@@ -46,7 +49,33 @@ class ItemsActivity : AppCompatActivity() {
         linkToStart.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            a = +1
+            a = 1
+        }
+    }
+
+    // Этот метод создает меню
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_item, menu)
+        return true
+    }
+
+    // Этот метод обрабатывает нажатия на пункты меню
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_notes -> {
+                startActivity(Intent(this, MainActivity::class.java))
+
+                // Действие для "Настройки"
+                // Например: startActivity(Intent(this, SettingsActivity::class.java))
+                true
+            }
+            R.id.action_exit -> {
+                startActivity(Intent(this, MainActivity::class.java))
+                // Действие для "О программе"
+                // Например: показать диалог
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }

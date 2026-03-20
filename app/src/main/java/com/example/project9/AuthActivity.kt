@@ -26,7 +26,7 @@ class AuthActivity : AppCompatActivity() {
         linkToReg.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            b = +1
+            b = 1
         }
 
         button.setOnClickListener {

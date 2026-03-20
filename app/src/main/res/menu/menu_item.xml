@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_notes"
+        android:color="@color/light_purple"
+        android:backgroundTint="@color/light_purple"
+        android:background="@color/light_purple"
+        android:title="Заметки"
+
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:title="Выйти"
+        android:color="@color/light_purple"
+
+        app:showAsAction="never" />
+
+</menu>
